@@ -11,6 +11,7 @@
   <script src="app.js"></script>
   <script src="controllers/todoController.js"></script>
   <script src="services/services.js"></script>
+  <script src="components/todoList.js"></script>
 </head>
 <body ng-app="todoApp" ng-controller="TodoCtrl">
 
@@ -23,9 +24,10 @@
 
 <br>
 
-<div ng-repeat="x in todoList">
-  <input type="checkbox" ng-model="x.done"> <span ng-bind="x.todoText"></span>
-</div>
+<!--<div ng-repeat="x in todoList">-->
+  <!--<input type="checkbox" ng-model="x.done"> <span class="done-{{x.done}}" ng-bind="x.todoText"></span>-->
+<!--</div>-->
+<todo-list></todo-list>
 
 <p><button ng-click="remove()">Remove marked</button></p>
 

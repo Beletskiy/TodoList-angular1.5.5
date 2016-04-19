@@ -1,0 +1,3 @@
+<div ng-repeat="x in $ctrl.todoList">
+    <input type="checkbox" ng-model="x.done"> <span class="done-{{x.done}}" ng-bind="x.todoText"></span>
+</div>

@@ -1,7 +1,5 @@
 var todoControllers = angular.module('todoControllers', []);
-todoControllers.controller('TodoCtrl',['$scope', 'Todo', function($scope, Todo) {
-    //$scope.todoList = [{todoText:'Clean House', done:false}];
-    $scope.todoList = Todo.query();
+todoControllers.controller('TodoCtrl',['$scope', function($scope) {
 
     $scope.todoAdd = function() {
         $scope.todoList.push({todoText:$scope.todoInput, done:false});
