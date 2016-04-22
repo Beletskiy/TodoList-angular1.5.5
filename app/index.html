@@ -1,35 +1,35 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Todo list angular1</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <title>Todo list angular1</title>
+    <link rel="stylesheet" href="css/styles.css">
 
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="bower_components/angular-resource/angular-resource.js"></script>
-  <script src="app.js"></script>
-  <script src="controllers/todoController.js"></script>
-  <script src="services/services.js"></script>
-  <script src="components/todoList.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="app.js"></script>
+    <script src="services/services.js"></script>
+    <script src="components/todoApp.js"></script>
+    <script src="components/todoList.js"></script>
+    <script src="components/todoForm.js"></script>
 </head>
-<body ng-app="todoApp" ng-controller="TodoCtrl">
+<body ng-app="todoApp">
 
-<h2>Todo List</h2>
+<todo-app></todo-app>
+<!--<h2>Todo List</h2>-->
+<!--<todo-header></todo-header>-->
+<!--<todo-list></todo-list>-->
+<!--<form ng-submit="todoAdd()">-->
+    <!--<input type="text" ng-model="todoInput" size="50" placeholder="Add New">-->
+    <!--<input type="submit" value="Add New">-->
+<!--</form>-->
 
-<form ng-submit="todoAdd()">
-  <input type="text" ng-model="todoInput" size="50" placeholder="Add New">
-  <input type="submit" value="Add New">
-</form>
-
-<br>
+<!--<br>-->
 
 <!--<div ng-repeat="x in todoList">-->
-  <!--<input type="checkbox" ng-model="x.done"> <span class="done-{{x.done}}" ng-bind="x.todoText"></span>-->
+<!--<input type="checkbox" ng-model="x.done"> <span class="done-{{x.done}}" ng-bind="x.todoText"></span>-->
 <!--</div>-->
-<todo-list></todo-list>
-
-<p><button ng-click="remove()">Remove marked</button></p>
 
 </body>
 </html>

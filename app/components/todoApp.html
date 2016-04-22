@@ -1,0 +1,7 @@
+<h2>Todo List</h2>
+<p>
+    <span>{{$ctrl.getRemaining()}} of {{$ctrl.todoList.length}} remaining</span>
+    <button ng-click="$ctrl.remove()">Remove marked</button>
+</p>
+<todo-list ng-repeat="todo in $ctrl.todoList" todo = "todo"></todo-list>
+<todo-form></todo-form>
