@@ -13,15 +13,17 @@ function TodoAppController(Todo) {
         var oldList = this.todoList;
         var self = this;
         this.todoList = [];
-        angular.forEach(oldList, function (x) {
-            if (!x.done) {
-                self.todoList.push(x);
+        angular.forEach(oldList, function (todo) {
+            if (!todo.done) {
+                self.todoList.push(todo);
             }
         });
     };
-    this.addTodo = function(todo) {
-        this.todoList.push(todo);
-        console.log(todo,'addTodo');
+    this.finalAdd = function(todo) {
+        this.todoList.push({
+            "todoText": todo,
+            "done":false
+        });
     };
 }
 

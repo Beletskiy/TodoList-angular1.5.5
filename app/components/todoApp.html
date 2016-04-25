@@ -4,4 +4,4 @@
     <button ng-click="$ctrl.remove()">Remove marked</button>
 </p>
 <todo-list ng-repeat="todo in $ctrl.todoList" todo = "todo"></todo-list>
-<todo-form></todo-form>
+<todo-form main-add-todo="$ctrl.finalAdd(fieldValue)"></todo-form>
