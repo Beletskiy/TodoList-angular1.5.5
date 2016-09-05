@@ -26,7 +26,6 @@ function TodoAppController(Todo) {
         });
     };
 }
-
 TodoAppController.$inject = ['Todo'];  // if I comment this  - change nothing
 angular.module('todoApp').component('todoApp', {
     templateUrl: 'components/todoApp.html',
